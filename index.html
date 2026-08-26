@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Landing section for brohatzeno, Aryan Karki: dramatic, technical, and fully human."
+      content="The portfolio landing hero of brohatzeno, Aryan Karki."
     />
-    <title>brohatzeno | Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="media/assets/logo.svg" />
+    <title>brohatzeno | Life is Dramatic</title>
+    <link rel="icon" type="image/svg+xml" href="/media/assets/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script type="module" src="/script.js"></script>
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#landing" aria-label="brohatzeno home">
-        <img src="media/assets/logo.svg" alt="" />
+        <img src="/media/assets/logo.svg" alt="" />
         <span>brohatzeno</span>
       </a>
 
@@ -32,10 +32,11 @@
       </button>
 
       <nav class="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#about-preview">About</a>
+        <a href="#landing">Home</a>
+        <a href="#about">About</a>
         <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-        <a href="media/assets/Aryan Karki Resume.pdf">Resume</a>
+        <a href="#gallery">World</a>
+        <a href="#now">Now</a>
       </nav>
     </header>
 
@@ -52,7 +53,7 @@
 
         <img
           class="portrait"
-          src="media/assets/meShaded.png"
+          src="/media/assets/meShaded.png"
           alt="Aryan Karki portrait cutout"
           width="1200"
           height="1259"
@@ -67,11 +68,11 @@
 
         <div class="contact-strip" aria-label="Contact links">
           <a href="mailto:karkiii.aryan@gmail.com">
-            <img src="media/icons/mail.svg" alt="" />
+            <img src="/media/icons/mail.svg" alt="" />
             <span>karkiii.aryan@gmail.com</span>
           </a>
           <a href="https://github.com/brohatzeno" target="_blank" rel="noreferrer">
-            <img src="media/icons/github-svgrepo-com.svg" alt="" />
+            <img src="/media/icons/github-svgrepo-com.svg" alt="" />
             <span>github.com/brohatzeno</span>
           </a>
           <a
@@ -79,143 +80,81 @@
             target="_blank"
             rel="noreferrer"
           >
-            <img src="media/icons/location.svg" alt="" />
+            <img src="/media/icons/location.svg" alt="" />
             <span>Kapan, Kathmandu, Nepal</span>
           </a>
         </div>
-
-        <a class="scroll-cue" href="#about-preview" aria-label="Scroll to next section">
-          <span>Scroll</span>
-          <span class="scroll-line"></span>
-        </a>
       </section>
 
-      <section class="about-preview section-shell" id="about-preview">
-        <div class="editorial-bar">
-          <span>Creative portfolio</span>
-          <span>brohatzeno / archive</span>
-        </div>
-
-        <div class="intro-composition">
-          <div class="section-heading">
-            <p class="label">Not a resume with better typography</p>
-            <h2>Hello, I’m Aryan Karki. But the name on the marquee is brohatzeno.</h2>
-          </div>
-
-          <div class="about-copy">
-            <p>
-              I build interfaces, visuals, and small digital worlds that hold onto personality. The work sits somewhere
-              between clean engineering and a restless sketchbook.
-            </p>
-            <p>
-              This space is designed like an editorial spread: loud type, intentional empty room, and frames waiting for
-              the projects, photos, notes, and experiments that come next.
-            </p>
-          </div>
-
-          <dl class="identity-list">
-            <div>
-              <dt>Mode</dt>
-              <dd>Developer / visual tinkerer</dd>
-            </div>
-            <div>
-              <dt>Based</dt>
-              <dd>Kathmandu, Nepal</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Whimsical, useful, cinematic</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="work-section section-shell" id="work">
-        <div class="gallery-head">
-          <p class="label">Gallery wall / empty for now</p>
-          <h2>Work will live here.</h2>
-          <p>
-            A modular wall for projects, writing, interface experiments, sketches, and artifacts. Each frame is empty on
-            purpose until the real pieces are ready.
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-copy">
+          <p class="label">glimpses through the memory lane</p>
+          <h2 id="gallery-title" data-gallery-title>A slow wheel of moments.</h2>
+          <p data-gallery-description>
+            Square-cut fragments moving like a half-seen Ferris wheel, drifting up the right side until one frame
+            catches the middle and takes the scene.
           </p>
         </div>
 
-        <div class="gallery-wall" aria-label="Empty gallery wall for future portfolio pieces">
-          <article class="gallery-frame gallery-frame-large">
-            <span>01</span>
-            <h3>Featured case</h3>
-            <p>Reserved for the project that should hit first.</p>
-          </article>
+        <div class="roulette-gallery" data-gallery-wheel aria-label="Photo carousel">
+          <button class="gallery-crank" type="button" aria-label="Crank gallery carousel" data-gallery-crank>
+            <img src="/media/icons/gear.svg" alt="" />
+          </button>
 
-          <article class="gallery-frame gallery-frame-tall">
-            <span>02</span>
-            <h3>Visual study</h3>
-          </article>
-
-          <article class="gallery-frame">
-            <span>03</span>
-            <h3>Build log</h3>
-          </article>
-
-          <article class="gallery-frame gallery-frame-red">
-            <span>04</span>
-            <h3>Experiment</h3>
-          </article>
-
-          <article class="gallery-frame gallery-frame-wide">
-            <span>05</span>
-            <h3>Archive strip</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="process-section section-shell" id="process">
-        <div class="poster-layout">
-          <p class="label">Working rhythm</p>
-          <h2>Curious first. Precise when it counts.</h2>
-          <p>
-            The workflow is simple: find the human part, sketch the strange part, then tighten everything until it works
-            on real screens.
-          </p>
-        </div>
-
-        <div class="process-track">
-          <article>
-            <span>Research</span>
-            <h3>Find the emotional edge</h3>
-            <p>Who is this for, what should it make easier, and what should it make unforgettable?</p>
-          </article>
-          <article>
-            <span>Design</span>
-            <h3>Shape the interface</h3>
-            <p>Layouts, type, color, motion, and responsive details that make the whole thing feel intentional.</p>
-          </article>
-          <article>
-            <span>Build</span>
-            <h3>Make it real</h3>
-            <p>Clean frontend structure, accessible interactions, and performance that stays out of the user's way.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-section section-shell" id="contact">
-        <div class="contact-panel">
-          <p class="label">End credits / start here</p>
-          <h2>Let’s make the next section less imaginary.</h2>
-          <div class="social-links" aria-label="Social links">
-            <a href="mailto:karkiii.aryan@gmail.com">
-              Email
-            </a>
-            <a href="https://github.com/brohatzeno" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a href="https://www.instagram.com/brohatzeno" target="_blank" rel="noreferrer">
-              Instagram
-            </a>
-            <a href="media/assets/Aryan Karki Resume.pdf">
-              Resume
-            </a>
-          </div>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_1071.JPG" alt="Gallery photo 1" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_0623.JPG" alt="Gallery photo 2" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/93D35C31-1AAD-44CD-BFE4-E3C25B3FFBDC.JPG" alt="Gallery photo 3" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG-20250715-WA0023_Original.jpg" alt="Gallery photo 4" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_0250.JPG" alt="Gallery photo 5" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/untitled-370.JPG" alt="Gallery photo 6" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_2487.JPG" alt="Gallery photo 7" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/FB_IMG_1731157873138_Original.jpg" alt="Gallery photo 8" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_3234.JPG" alt="Gallery photo 9" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/meeror_selfie.JPG" alt="Gallery photo 10" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_20221027_202451_080_Original.jpg" alt="Gallery photo 11" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_1195.JPG" alt="Gallery photo 12" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/Picsart_23-03-22_21-34-14-815_Original.jpg" alt="Gallery photo 13" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_0623 2.JPG" alt="Gallery photo 14" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_3043.JPG" alt="Gallery photo 15" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/me9.JPG" alt="Gallery photo 16" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/IMG_20260324_224150_981_Original.jpg" alt="Gallery photo 17" />
+          </figure>
+          <figure class="gallery-tile" data-gallery-tile>
+            <img src="/media/assets/carassoul/FB_IMG_1737224400670_Original.jpg" alt="Gallery photo 18" />
+          </figure>
         </div>
       </section>
     </main>
