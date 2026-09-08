@@ -864,12 +864,12 @@ button:focus-visible {
   }
 
   .landing {
-    min-height: 100svh;
-    padding: 86px 16px 72px;
+    min-height: max(100svh, 760px);
+    padding: 96px 16px 112px;
   }
 
   .landing h1 {
-    top: 27%;
+    top: 25%;
     max-width: calc(100vw - 32px);
     font-size: clamp(3.9rem, 18.2vw, 5.8rem);
     line-height: 0.82;
@@ -877,28 +877,34 @@ button:focus-visible {
   }
 
   .kicker {
-    top: calc(27% + 1px);
-    left: calc(50% - 142px);
+    top: calc(25% - 34px);
+    left: 16px;
     font-size: clamp(0.65rem, 3.1vw, 0.86rem);
+    text-align: left;
+    transform: none;
   }
 
   .birth-date {
-    top: calc(27% + clamp(44px, 12vw, 58px));
-    left: calc(50% + 137px);
+    top: calc(25% + clamp(56px, 16vw, 72px));
+    right: 16px;
+    left: auto;
     max-width: calc(100vw - 32px);
     font-size: 0.64rem;
+    text-align: right;
+    transform: none;
   }
 
   .portrait {
     bottom: 0;
     width: auto;
-    height: min(56svh, 500px);
+    height: min(54svh, 480px);
     min-width: 0;
   }
 
   .hero-copy {
-    width: min(100%, 390px);
-    margin-bottom: 34svh;
+    width: calc(100% - clamp(28px, 8vw, 44px));
+    margin-left: clamp(28px, 8vw, 44px);
+    margin-bottom: 37svh;
   }
 
   .hero-copy p:last-child {
@@ -907,7 +913,7 @@ button:focus-visible {
 
   .contact-strip {
     right: 16px;
-    bottom: 20px;
+    bottom: 18px;
     left: 16px;
     grid-template-columns: 1fr;
     gap: 6px;
@@ -997,18 +1003,15 @@ button:focus-visible {
 
 @media (max-width: 380px) {
   .kicker {
-    left: 13%;
-    transform: none;
+    left: 16px;
   }
 
   .birth-date {
-    left: auto;
     right: 16px;
-    transform: none;
   }
 
   .hero-copy {
-    margin-bottom: 32svh;
+    margin-bottom: 38svh;
   }
 }
 
